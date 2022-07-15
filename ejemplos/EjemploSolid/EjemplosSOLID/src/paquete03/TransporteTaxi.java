@@ -28,6 +28,4 @@ public class TransporteTaxi {
     public double obtenerTarifa(){
         return tarifa;
     }
-    
-    
 }

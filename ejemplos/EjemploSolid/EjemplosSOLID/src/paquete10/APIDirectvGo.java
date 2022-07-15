@@ -5,22 +5,25 @@
  */
 package paquete10;
 
-
-public class APINetflix implements APIMovie{
-    
+/**
+ *
+ * @author Matias Quezada
+ */
+public class APIDirectvGo implements APIMovie {
     private String apiKey;
     
     @Override
     public void establecerApiKey(String ak){
-        apiKey = String.format("%s%s" , ak , "123123");
+        apiKey = String.format("%s%s" , ak , "789456");
     }
     
     @Override
     public String obtenerApiKey(){
         return apiKey;
     }
+    
     @Override
     public String toString() {
-        return "Netflix";
+        return "Directv Go";
     }
 }

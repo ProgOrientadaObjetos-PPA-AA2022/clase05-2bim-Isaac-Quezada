@@ -5,19 +5,23 @@
  */
 package paquete10;
 
+public class APIAmazonMovie implements APIMovie {
 
-public class APIAmazonMovie implements APIMovie{
-    
     private String apiKey;
-    
+
     @Override
-    public void establecerApiKey(String ak){
-        apiKey = ak+"909090";
+    public void establecerApiKey(String ak) {
+        apiKey = String.format("%s%s", ak, "909090");
     }
-    
+
     @Override
-    public String obtenerApiKey(){
+    public String obtenerApiKey() {
         return apiKey;
     }
-    
+
+    @Override
+    public String toString() {
+        return "Amazon Movie";
+    }
+
 }
